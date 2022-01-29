@@ -7,3 +7,7 @@ h3 {
 body{
     background-color: darkgray;
 }
+
+span.ingredient {
+    color: #f00;
+}
