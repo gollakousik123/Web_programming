@@ -1,0 +1,16 @@
+body {
+    background-image: url("../Background.jpg");
+    background-size: cover;
+}
+#info {
+    margin-top: 35%;
+    margin-left: 60%;
+}
+h2{
+    color: rgb(13, 14, 13);
+}
+img {
+    height: 100px;
+    width: 60px;
+}
+
