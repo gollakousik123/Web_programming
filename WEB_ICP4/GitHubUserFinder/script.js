@@ -4,8 +4,8 @@ function getGithubInfo(userName) {
     $.ajax({
         "url": "https://api.github.com/users/" + userName,
         "type": 'GET',
-        "success": function (res) {
-            showUser(res);
+        "success": function (response) {
+            displayUser(response);
         },
         "fail": noSuchUser(userName),
     });
@@ -17,7 +17,7 @@ function getGithubInfo(userName) {
  })*/
 
 
-function showUser(user) {
+function displayUser(user) {
     //2. set the contents of the h2 and the two div elements in the div '#profile' with the user content
     $(".userImage").show();
     $(".details").show();
@@ -35,7 +35,7 @@ function noSuchUser(username) {
     //3. set the elements such that a suitable message is displayed
     $("#profile h1").text(username + " NOT FOUND");
     $(".userImage").hide();
-    $(".information").hide();
+    $(".details").hide();
 
 }
 
