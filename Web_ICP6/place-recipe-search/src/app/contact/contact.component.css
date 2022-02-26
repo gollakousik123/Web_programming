@@ -1,0 +1,9 @@
+.contact-info{
+   position: relative;
+   color: tomato;
+   border: 2px solid black;
+   border-radius: 20px;
+   background-color: white;
+   margin-top: 100px;
+   width: 505px;
+}
