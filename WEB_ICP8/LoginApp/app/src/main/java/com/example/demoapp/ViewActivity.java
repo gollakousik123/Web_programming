@@ -19,4 +19,8 @@ public class ViewActivity extends AppCompatActivity {
         startActivity(redirect);
 
     }
+    public void logout(View view) {
+        Intent redirect = new Intent(ViewActivity.this, MainActivity.class);
+        startActivity(redirect);
+    }
 }
